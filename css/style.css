@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+.container  {
+  font-family: 'Pacifico', cursive;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  color: #000;
+  cursor: url("./../img/cursor1.png"), pointer;
+}
+
+.screen {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.bossTeemo {
+  width: 220px;
+  height: 220px;
+  border: 1px solid brown;
+  margin: 40px auto 0px auto;
+  background-image: url(https://media.giphy.com/media/l1KVa93IdKtyWN9YY/giphy.gif);
+  background-size: contain;
+  border-radius: 140px;
+  cursor: url("./../img/cursor3.png"), pointer;
+}
+
+.scoreContainer {
+  display: flex;
+  position: relative;
+}
+
+.score {
+  width: 220px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 10px auto 0 auto;
+
+  font-weight: bold;
+  font-size: 25px;
+  color: lightgrey;
+}
+
+.autoScore {
+  position: absolute;
+  margin-left: 60%;
+  margin-top: 60px;
+  color: #fff;
+  height: 40px;
+  width: 150px;
+}
+
+.successContainer {
+  position: absolute;
+  width: 20%;
+  height: 120px;
+  top: 70%;
+  left: 2%;
+  overflow-y: scroll;
+  text-align: center;
+  border: grey solid 1px;
+}
+
+.successTitle {
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.achievements {
+  height: 30px;
+}
+
+.persos {
+  display: flex;
+  height: 210px;
+  margin-top: 75px;
+  font-size: 14px;
+}
+
+.karthusContainer, .sonaContainer, .olafContainer, .yorickContainer, .mordekaiserContainer {
+  width: 16%;
+  margin: 0 auto;
+  text-align: center;
+  border-right: 3px solid grey;
+  border-left: 3px solid grey;
+}
+
+.karthus, .sona, .olaf, .yorick, .mordekaiser {
+  margin-top: 30px;
+  line-height: 20px;
+  cursor: url("./../img/cursor2.png"), pointer;
+}
+
+.karthusImg {
+  height: 96px;
+  margin-bottom: -8px;
+  position: relative;
+}
+
+.karthusImg::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  background: #fff;
+}
+
+.sonaImg {
+  height: 90px;
+}
+
+.olafImg {
+  height: 100px;
+  margin-bottom: -5px;
+  margin-top: -5px
+}
+
+.yorickImg {
+  height: 90px;
+}
+
+.mordekaiserImg {
+  height: 90px;
+}
