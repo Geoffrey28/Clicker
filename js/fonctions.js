@@ -1,9 +1,9 @@
-var clicker = document.querySelector(".bossTeemo");
+var clicker = document.querySelector(".clickArea");
 var modal = document.querySelector(".modal");
 var leave = document.querySelector(".leaveModal");
 var score = document.querySelector(".score");
 var nbScore = 0;
-var multiplier = document.querySelector(".karthus");
+var multiplier = document.querySelector(".clicker");
 var nbMultiplier = 1;
 var autoScoreArea = document.querySelector(".autoScore")
 var autoScore;
@@ -14,7 +14,7 @@ function displayScore() {
 }
 
 function displayNbMultiplier(){
-  multiplier.innerHTML = "Karthus <br> level : " + level0 + "<br>" + nbMultiplier + " DPclick<br> Level up : " + prix() + " dmg";
+  multiplier.innerHTML = "Clicker <br> level : " + level0 + "<br>" + nbMultiplier + " DPclick<br> Level up : " + prix() + " dmg";
 }
 
 function displayAutoScore(){
@@ -23,6 +23,8 @@ function displayAutoScore(){
     autoScoreArea.textContent = "Productivité :" + autoScore + "€/s";
   }
 }
+
+// CLICK PERSO
 
 function click(){
   nbScore = nbScore + nbMultiplier;
@@ -47,20 +49,20 @@ function buyMultiplier() {
 
 leave.addEventListener('click', function() {
     modal.style.display= 'none';
-})
+});
 
 
-var perso1 = document.querySelector(".sona");
-var perso2 = document.querySelector(".olaf");
-var perso3 = document.querySelector(".yorick");
-var perso4 = document.querySelector(".mordekaiser");
+var perso1 = document.querySelector(".auto1");
+var perso2 = document.querySelector(".auto2");
+var perso3 = document.querySelector(".auto3");
+var perso4 = document.querySelector(".auto4");
 var level1 = 0;
 var level2 = 0;
 var level3 = 0;
 var level4 = 0;
 
 
-// Sona
+// AUTO-CLICK 1
 
 function price1() {
   return 200 * ( level1 + 1 );
@@ -71,7 +73,7 @@ function product1() {
 }
 
 function displayPerso1() {
-  perso1.innerHTML = 'Sona<br> Level : ' + level1 + '<br>DPS : ' + product1() + ' Dmg/s<br> Level up : ' + price1() + ' dmg';
+  perso1.innerHTML = 'Auto 1<br> Level : ' + level1 + '<br>DPS : ' + product1() + ' Dmg/s<br> Level up : ' + price1() + ' dmg';
 }
 
 
@@ -94,7 +96,7 @@ function scoreSecond1() {
 var intervalID = window.setInterval(scoreSecond1, 1000);
 
 
-// OLAF
+// AUTO-CLICK 2
 
 function price2() {
   return 500 * ( level2 + 1 );
@@ -105,7 +107,7 @@ function product2() {
 }
 
 function displayPerso2() {
-  perso2.innerHTML = 'Olaf<br> level : ' + level2 + '<br>DPS : ' + product2() + ' Dmg/s<br> Level up : ' + price2() + " dmg";
+  perso2.innerHTML = 'Auto 2<br> level : ' + level2 + '<br>DPS : ' + product2() + ' Dmg/s<br> Level up : ' + price2() + " dmg";
 }
 
 
@@ -128,7 +130,7 @@ function scoreSecond2() {
 var intervalID = window.setInterval(scoreSecond2, 1000);
 
 
-// YORICK
+// AUTO-CLICK 3
 
 function price3() {
   return 1000 * ( level3 + 1 );
@@ -139,7 +141,7 @@ function product3() {
 }
 
 function displayPerso3() {
-  perso3.innerHTML = 'Yorick<br>level : ' + level3 + '<br>DPS : ' + product3() + ' Dmg/s<br> Level up : ' + price3() + ' dmg';
+  perso3.innerHTML = 'Auto 3<br>level : ' + level3 + '<br>DPS : ' + product3() + ' Dmg/s<br> Level up : ' + price3() + ' dmg';
 }
 
 
@@ -163,7 +165,7 @@ var intervalID = window.setInterval(scoreSecond3, 1000);
 var intervalID = window.setInterval(displayAutoScore, 1000);
 
 
-// PERSO 4
+// AUTO-CLICK 4
 
 function price4() {
   return 2500 * ( level4 + 1 );
@@ -174,7 +176,7 @@ function product4() {
 }
 
 function displayPerso4() {
-  perso4.innerHTML = 'Mordekaiser<br>Level : ' + level4 + '<br>DPS : ' + product4() + ' Dmg/s<br> Level up : ' + price4() + ' dmg';
+  perso4.innerHTML = 'Auto 4<br>Level : ' + level4 + '<br>DPS : ' + product4() + ' Dmg/s<br> Level up : ' + price4() + ' dmg';
 }
 
 
