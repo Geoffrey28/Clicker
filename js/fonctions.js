@@ -3,7 +3,7 @@ var modal = document.querySelector(".modal");
 var leave = document.querySelector(".leaveModal");
 var score = document.querySelector(".score");
 var nbScore = 0;
-var multiplier = document.querySelector(".clicker");
+var multiplier = document.querySelector("multiplier");
 var nbMultiplier = 1;
 var autoScoreArea = document.querySelector(".autoScore")
 var autoScore;

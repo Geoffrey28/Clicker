@@ -1,15 +1,24 @@
-var perso1 = document.querySelector(".perso1");
+var clickArea = document.getElementById('clickArea');
+var multiplier = document.getElementById('multiplier');
+var multiplierValue = 1;
+var score = document.querySelector('.score');
+var scoreValue = 0;
 
-var personnage1 = {
-  level : 1,
-  price : 200,
-  priceMultiplier : 200,
-  productMultiplier : 4,
+clickArea.addEventListener('click', function() {
+  addScore();
+});
+
+multiplier.addEventListener('click', function(){
+  levelUp();
+});
+
+function addScore() {
+  scoreValue = scoreValue + multiplierValue;
+  score.textContent = "Score: " + scoreValue;
 }
 
-function calculatingPrice(personnage1) {
-  price = priceMultiplier * (level + 1);
+function levelUp() {
+  if (this === multiplier) {
+    multiplierValue++;
+  }
 }
-
-perso1.onclick =
-calculatingPrice(personnage1);

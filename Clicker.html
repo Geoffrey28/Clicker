@@ -3,90 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Clicker</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
+  <!--  <link rel="stylesheet" href="css/reset.css"> -->
+  <!--  <link rel="stylesheet" href="css/style.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   </head>
   <body>
+    <section class="container">
+      <div class="screen">
+        <div id="clickArea"></div>
+        <div class="scoreContainer">
+          <div class="score"></div>
+          <div class="scoreSecond"></div>
+        </div>
+      </div>
 
+      <div id="multiplier"></div>
 
-      <section class="container">
-
-          <div class="modal">
-            <div class="leaveModal"></div>
-          </div>
-
-          <div class="screen">
-
-            <div class="successContainer">
-
-              <h4 class="successTitle">Success</h4>
-
-                <div class="achievements">
-                  <h4 class="titleScore success1">???</h4>
-                </div>
-
-                <div class="achievements">
-                  <h4 class="titleScore success2">???</h4>
-                </div>
-
-                <div class="achievements">
-                  <h4 class="titleScore success3">???</h4>
-                </div>
-
-                <div class="achievements">
-                  <h4 class="titleScore success4">???</h4>
-                </div>
-
-                <div class="achievements">
-                  <h4 class="titleScore success5">???</h4>
-                </div>
-
-                <div class="achievements">
-                  <h4 class="titleScore success6">???</h4>
-                </div>
-
-            </div>
-
-              <div class="player">
-
-                <div class="clickArea"></div>
-
-                <div class="scoreContainer">
-
-                  <div class="score"></div>
-
-                  <div class="autoScore"></div>
-                </div>
-
-              </div>
-
-          </div>
-
-          <div class="persos">
-
-              <div class="clicker"></div>
-
-              <div class="auto1"></div>
-
-              <div class="auto2"></div>
-
-              <div class="auto3"></div>
-
-              <div class="auto4"></div>
-
-
-
-          </div>
-
-
-      </section>
-
-      <script src="js/fonctions.js" type="text/javascript"></script>
-
-
-
-    </div>
-
+      <div id="persos">
+        <div class="perso"></div>
+        <div class="perso"></div>
+        <div class="perso"></div>
+        <div class="perso"></div>
+      </div>
+    </section>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/data.js" type="text/javascript"></script>
   </body>
 </html>
